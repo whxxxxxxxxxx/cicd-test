@@ -8,6 +8,7 @@ import (
 func main() {
 	http.HandleFunc("/ping", pingHandler)
 	http.HandleFunc("/error", errorHandler)
+    print("success")
 	http.ListenAndServe(":8080", nil)
 }
 
